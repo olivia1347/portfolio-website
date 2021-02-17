@@ -5,6 +5,30 @@ body {
   line-height: 1.6;
 }
 
+a {
+  color: #3AC2F8;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #06729D;
+}
+
+a:hover {
+  color: #A198D7;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #97AAC3;
+}
+
+a:hover,
+a:focus {
+  color: #A198D7;
+  text-decoration: underline;
+}
+
 img {
   width: 100%;
 }
