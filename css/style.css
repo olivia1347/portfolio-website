@@ -16,7 +16,7 @@ a:visited {
 
 a:hover {
   color: #6D53A2;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:active {
@@ -26,7 +26,7 @@ a:active {
 a:hover,
 a:focus {
   color: #6D53A2;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #myname {
@@ -39,7 +39,6 @@ a:focus {
 img {
   width: 100%;
 }
-
 .button {
   display: inline-block;
   background-color: #ff7f50;
