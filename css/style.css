@@ -1,38 +1,43 @@
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
 a {
-  color: #3AC2F8;
+  color: #ff7f50;
   text-decoration: none;
 }
 
 a:visited {
-  color: #06729D;
+  color: #8E78BA;
 }
 
 a:hover {
-  color: #A198D7;
+  color: #6D53A2;
   text-decoration: underline;
 }
 
 a:active {
-  color: #97AAC3;
+  color: #BA5C12;
 }
 
 a:hover,
 a:focus {
-  color: #A198D7;
+  color: #6D53A2;
   text-decoration: underline;
 }
 
 .myname {
+  color: #E83F6F;
   font-family: 'Roboto Slab', serif;
   font-size: 30px;
   font-weight: 700;
+}
+
+.navigation {
+  color: #000000;
 }
 
 
