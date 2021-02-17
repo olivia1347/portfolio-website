@@ -6,31 +6,31 @@ body {
 }
 
 a {
-  color: #ff7f50;
+  color: #000000;
   text-decoration: none;
 }
 
 a:visited {
-  color: #8E78BA;
+  color: #81899C;
 }
 
 a:hover {
-  color: #6D53A2;
+  color: #312442;
   text-decoration: none;
-}
-
-a:active {
-  color: #BA5C12;
 }
 
 a:hover,
 a:focus {
-  color: #6D53A2;
+  color: #312442;
   text-decoration: none;
 }
 
+a:active {
+  color: #ffffff;
+}
+
 #myname {
-  color: #779BE7;
+  color: #8079B9;
   font-family: 'Roboto Slab', serif;
   font-size: 30px;
   font-weight: 700;
