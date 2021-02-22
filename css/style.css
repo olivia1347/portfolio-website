@@ -66,3 +66,9 @@ img {
   background-color: #ff7f50;
   color: #ffffff;
 }
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
