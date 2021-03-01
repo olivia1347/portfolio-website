@@ -42,20 +42,25 @@ img {
   width: 100%;
 }
 
+.illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .button {
   display: inline-block;
   background-color: #ff7f50;
-  color: #ffffff;
+  color: white;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
-  transition: 0.2s opacity;
+  transition: 0.8s opacity;
 }
-
 .button:hover {
   opacity: 0.8;
-  text-decoration: none;
 }
 
 .button.contact {
@@ -79,8 +84,12 @@ img {
   margin: 25px 0;
 }
 
-#hero h2 {
+#hero {
   text-align: center;
+}
+
+#hero span {
+  display: block;
 }
 
 header {
@@ -110,15 +119,36 @@ nav>ul>li>a {
     padding: 20px 0 13px;
   }
 
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
-    }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
   }
 
-  @media only screen and (min-width: 1024px) {}
+  .col-md-6 {
+    width: 50%;
+  }
+}
 
-  @media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1024px) {
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
 
-  @media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 1440px) {}
+
+@media only screen and (min-width: 1920px) {}
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
