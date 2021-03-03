@@ -42,12 +42,6 @@ img {
   width: 100%;
 }
 
-.illustration {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
 .button {
   display: inline-block;
   background-color: #ff7f50;
@@ -59,6 +53,7 @@ img {
   border-bottom: 2px solid #994c30;
   transition: 0.8s opacity;
 }
+
 .button:hover {
   opacity: 0.8;
 }
