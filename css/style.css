@@ -128,7 +128,7 @@ nav>ul>li>a {
   .col-md-6 {
     width: 50%;
   }
-}
+
 
 @media only screen and (min-width: 1024px) {
   .container {
@@ -144,7 +144,6 @@ nav>ul>li>a {
 
   [class*="col-"] {
     float: left;
-    padding: 10px;
   }
 
 .row::after {
@@ -178,4 +177,9 @@ nav>ul>li>a {
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.picWrapper,
+.descWrapper {
+  padding: 5px;
 }
