@@ -186,3 +186,8 @@ nav>ul>li>a {
 #contact {
   text-align: center;
 }
+
+.project-title {
+  text-align: center;
+  padding-top: 100px;
+}
