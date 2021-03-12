@@ -71,6 +71,7 @@ img {
 }
 
 /* Layout styling */
+
 .container {
   padding: 0 15px;
 }
@@ -80,6 +81,7 @@ img {
 }
 
 #hero {
+  padding: 50px;
   text-align: center;
 }
 
