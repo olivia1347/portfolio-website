@@ -186,7 +186,6 @@ footer p {
 }
 
 /*About*/
-
 .about {
   padding: 0 300px;
 }
@@ -219,7 +218,6 @@ footer p {
     text-align: unset;
     padding: 20px 0 13px;
   }
-
 
   @media only screen and (min-width: 1024px) {
     .container {
