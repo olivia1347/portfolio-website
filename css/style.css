@@ -130,6 +130,18 @@ span {
   color: #2A9D8F;
 }
 
+[class*="col-"] {
+  float: left;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*
 .portfolio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -140,9 +152,12 @@ span {
   width: 500px;
 }
 
+*/
+
 .portfolio-img:hover {}
 
 /*Footer*/
+
 footer {
   margin-top: 50px;
   padding-top: 25px;
@@ -225,6 +240,10 @@ padding: 10px 25px;
 
 /*Responsive*/
 @media only screen and (min-width: 641px) {
+  .col-md-6 {
+    width: 50%;
+  }
+
   header {
     padding: 20px 0 13px;
   }
@@ -242,7 +261,15 @@ padding: 10px 25px;
 }
 }
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
 
 @media only screen and (min-width: 1440px) {}
 
