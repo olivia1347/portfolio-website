@@ -140,7 +140,6 @@ span {
   display: table;
 }
 
-
 /*
 .portfolio {
   display: grid;
@@ -153,11 +152,9 @@ span {
 }
 
 */
-
 .portfolio-img:hover {}
 
 /*Footer*/
-
 footer {
   margin-top: 50px;
   padding-top: 25px;
@@ -229,13 +226,13 @@ footer p {
 }
 
 .resume {
-background-color: #2A9D8F;
-color: #FFFFFF;
-letter-spacing: 0.03rem;
-border-radius: 25px;
-width: 160px;
-height: 40px;
-padding: 10px 25px;
+  background-color: #2A9D8F;
+  color: #FFFFFF;
+  letter-spacing: 0.03rem;
+  border-radius: 25px;
+  width: 160px;
+  height: 40px;
+  padding: 10px 25px;
 }
 
 /*Responsive*/
@@ -257,8 +254,8 @@ padding: 10px 25px;
   }
 
   .navtoggle, .navtoggle.responsive {
-  position: relative;
-}
+    position: relative;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -290,6 +287,6 @@ padding: 10px 25px;
   font-size: 20px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
