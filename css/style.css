@@ -151,8 +151,6 @@ span {
 }
 
 */
-
-
 /*Footer*/
 footer {
   margin-top: 50px;
@@ -198,7 +196,6 @@ footer p {
 
 /*About*/
 .about {
-  padding: 0 300px;
 }
 
 .about p {
@@ -206,7 +203,6 @@ footer p {
 }
 
 .profileWrapper {
-  padding: 0 300px;
   padding-top: 150px;
 }
 
@@ -216,17 +212,14 @@ footer p {
 }
 
 .my-skills {
-  padding: 0 300px;
 }
 
 .extra ul {
-  padding: 0 300px;
   padding-bottom: 25px;
   list-style: circle;
 }
 
 .extra h2 {
-  padding: 0 300px;
 }
 
 .resume {
@@ -237,13 +230,21 @@ footer p {
   width: 160px;
   height: 40px;
   padding: 10px 25px;
-margin-left: 300px;
+  margin-left: 300px;
 }
 
 /*Responsive*/
 @media only screen and (min-width: 641px) {
   .col-md-6 {
     width: 50%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-4 {
+    width: 100%;
   }
 
   header {
@@ -273,25 +274,30 @@ margin-left: 300px;
   }
 }
 
-@media only screen and (min-width: 1440px) {}
-
-@media only screen and (min-width: 1920px) {}
-
-.navtoggle li:not(:last-child) {
-  display: none;
+@media only screen and (min-width: 1440px) {
+  .col-lg-4 {
+    width: 33.33%;
+  }
 }
 
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
+@media only screen and (min-width: 1920px) {
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
 
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-}
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
 
-.navtoggle.responsive li {
-  display: block;
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+  }
+
 }
