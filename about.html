@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>About Olivia Rudd</title>
+  <title>About Olivia Rudd- UX & UI Designer</title>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
   <link href="img/favicon.png" rel="shortcut icon">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,74 +16,73 @@
 <body>
 
   <header>
-    <div class="navToggle" id="myNavtoggle">
-      <nav>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
         <a href="index.html" class="name">Olivia Rudd</a>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
+  <main>
+    <div class="container">
+      <div class="about">
+        <div class="about-title">
+          <h3>About Me</h3>
+        </div>
 
-  <!-- hero section -->
-
-<div class="row">
-
-
-    <div class="profileWrapper">
-      <picture>
-        <source srcset="img/me@1x.jpg" media="(max-width:767px)">
-        <img src="img/me@2x.jpg" alt="Me">
-      </picture>
-    </div>
-
-    <div class="about">
-      <h1>Hi, I'm Olivia.</h1>
-      <span></span>
-      <p>
-        I'm 22 years old and I currently live in Charleston, South Carolina.
-        I have always had a passion for design and all of the many different processes behind it.
-        It's something that has continued to excite and inspire me every day!
-        I'm a hard worker who is open to trying new things & exploring new ideas. I'm always looking to learn and improve.
-      </p>
-    </div>
-
-    <div class="my-skills">
-      <div class="skills-title">
-        <h2>My Skills</h2>
+        <div class="">
+          <h4>Hi! I'm <span>Olivia Rudd.</span></h4>
+        </div>
+        <div class="desc">
+          <p>I'm 22 years old and I currently live in Charleston, South Carolina.
+            I have always had a passion for design and all of the many different processes behind it.
+            It's something that has continued to excite and inspire me every day!
+            I'm a hard worker who is open to trying new things & exploring new ideas. I'm always looking to learn and improve.
+          </p>
+          <div class="resume-button">
+            <a href="https://www.dropbox.com/s/1x3p3erfg2pkwxc/OliviaRuddResume.pdf?dl=0" class="button">View My Resume</a>
+          </div>
+        </div>
       </div>
-      <div class="listed-skills">
-        <table cellspacing="10">
-          <tr>
-            <td>UI Design</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <td>UX Design</td>
-          <td>⭐⭐⭐⭐⭐</td>
-          <tr>
-            <td>Web Development</td>
-            <td>⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Adobe Xd</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Photoshop</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-        </table>
-      </div>
-    </div>
 
-    <div class="extra">
-      <h2>Here's some specifics of what I can do:</h2>
+      <div class="more">
+        <div class="more-title">
+          <h3>Skills & Tools</h3>
+        </div>
+
+        <div class="skills">
+          <table cellspacing="10">
+            <tr>
+              <td>UI Design</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <td>UX Design</td>
+            <td>⭐⭐⭐⭐⭐</td>
+            <tr>
+              <td>Web Development</td>
+              <td>⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Adobe Xd</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Photoshop</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <h4>Here's some specifics of what I can do:</h4>
       <ul>
         <li>Research (User interviews, Competitor Analysis and Data Analysis)</li>
         <li>User Testing</li>
@@ -93,37 +92,30 @@
         <li>Creating Case Studies</li>
       </ul>
     </div>
-    <a href="https://www.dropbox.com/s/1x3p3erfg2pkwxc/OliviaRuddResume.pdf?dl=0" class="resume">View My Resume</a>
-    
 
+  </main>
 
+  <footer id="contact">
+    <div class="container">
 
-    <!-- footer -->
-
-    <footer id="contact">
-      <div class="contact-text">
-        <h2>Contact me</h2>
-        <p>I'd love to work with you!</p>
-        <a href="mailto:olivialr1347@gmail.com" class="email-button">Email Me</a>
-      </div>
+      <h3>Contact Me</h3>
+      <p>I'd love to work with you!</p>
+      <a href="mailto:olivialr1347@gmail.com" class="button">Email Me</a>
       <p>You can also find me on Linkedin</p>
-      <div class="social-img">
-        <!-- linkedin -->
-        <a href="https://www.linkedin.com/in/olivia-rudd-6061a51b0/">
+      <div>
+        <a href="https://www.linkedin.com/in/olivia-rudd-6061a51b0/" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);">
             <path
               d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h16c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z M8.339,18.337H5.667 v-8.59h2.672V18.337z M7.003,8.574c-0.856,0-1.548-0.694-1.548-1.548s0.691-1.548,1.548-1.548c0.854,0,1.548,0.693,1.548,1.548 S7.857,8.574,7.003,8.574z M18.338,18.337h-2.669V14.16c0-0.996-0.018-2.277-1.388-2.277c-1.39,0-1.601,1.086-1.601,2.207v4.248 h-2.667v-8.59h2.56v1.174h0.037c0.355-0.675,1.227-1.387,2.524-1.387c2.704,0,3.203,1.778,3.203,4.092V18.337z">
             </path>
           </svg>
         </a>
-        <div>
-          <p>Copyright Olivia Rudd 2020</p>
-        </div>
+        <p>Copyright Olivia Rudd 2021</p>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="js/scripts.js"></script>
-
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
