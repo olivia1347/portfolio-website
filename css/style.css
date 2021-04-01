@@ -1,253 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
-  line-height: 1.6;
 }
 
-#main {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
-.name {
-  font-size: 20px;
+#hero h2 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h3 {
+  color: #238479;
+  font-size: 1.75em;
   font-weight: bold;
-  color: #6272a4;
-  letter-spacing: 0.03em;
+  line-height: 1.4;
 }
 
-ul {
-  list-style: none;
+h4 {
+  font-size: 1.35em;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
 a {
   text-decoration: none;
 }
 
-nav {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.04);
-  position: fixed;
-  padding: 5px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+nav>ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-nav ul {
-  display: flex;
-}
-
-nav ul li a {
-  font-size: 0.8rem;
+nav>ul>li>a {
+  font-size: 16px;
+  padding: 0 15px;
+  text-transform: lowercase;
   font-weight: bold;
   text-transform: uppercase;
-  color: #747474;
-  height: 40px;
-  line-height: 43px;
-  margin: 3px;
-  padding: 0px 22px;
-  display: flex;
-  letter-spacing: 1px;
+  color: #ADADAD;
 }
 
-nav ul li a:hover {
-  color: #2A9D8F;
-  transition: all ease 0.2s;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li {
+  display: block;
 }
 
 img {
   width: 100%;
 }
 
-/*intro*/
-.intro {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.intro h2 {
+  padding-top: 50px;
 }
 
-.illustration {
-  width: 700px;
+header {
+  background-color: #ffffff;
+  padding: 10px 0;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.04);
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+.container {
+  padding: 0 35px;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #238479;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  background-color: #23cdaf;
+  transition: all ease 0.8s;
 }
 
 span {
   color: #6272a4;
 }
 
-.intro-text {
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+#work h3 {
   text-align: center;
-  padding: 50px;
-  width: 700px;
-}
-
-.intro-text h1 {
-  font-size: 3.5rem;
-  color: #1c3548;
-  margin: 0 0 10px 0;
-  padding-bottom: 10px;
-}
-
-.intro-text p {
-  font-size: 18px;
-  color: #525251;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.work-button {
-  background-color: #238479;
-  color: #FFFFFF;
-  letter-spacing: 0.03rem;
-  border-radius: 25px;
-  width: 160px;
-  height: 40px;
-  padding: 10px 25px;
+.name {
+  color: #6272a4;
+  font-family: 'Lato', sans-serif;
 }
 
-.work-button:hover {
-  background-color: #23cdaf;
-  transition: all ease 0.8s;
+.job {
+  padding-top: 50px;
 }
 
-/* Work */
-.my-work {
-  padding-top: 100px;
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
   text-align: center;
 }
 
-.work-title {
-  padding: 50px;
-  color: #238479;
+#hero span {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #F5F5F5;
+}
+
+main {
+  padding-top: 99px;
 }
 
 [class*="col-"] {
   float: left;
 }
 
-.row:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/*
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.portfolio-img {
-  padding-bottom: 100px;
-  width: 500px;
-}
-
-*/
-
-
-/*Footer*/
-footer {
-  margin-top: 50px;
-  padding-top: 25px;
-  background-color: #f5f5f5;
-}
-
-footer h2 {
-  color: #2A9D8F;
-  text-align: center;
-}
-
-footer p {
-  text-align: center;
-}
-
-.social-img {
-  text-align: center;
-}
-
-.social-img svg {
-  width: 100px;
-}
-
-.contact-text {
-  text-align: center;
-}
-
-.email-button {
-  background-color: #238479;
-  color: #FFFFFF;
-  letter-spacing: 0.03rem;
-  border-radius: 25px;
-  width: 160px;
-  height: 40px;
-  padding: 10px 25px;
-}
-
-.email-button:hover {
-  background-color: #23cdaf;
-  transition: all ease 0.8s;
-}
-
-/*About*/
-.about {
-  padding: 0 300px;
-}
-
-.about p {
-  width: 80%;
-}
-
-.profileWrapper {
-  padding: 0 300px;
-  padding-top: 150px;
-}
-
-.profileWrapper img {
-  border-radius: 50%;
-  width: 100px;
-}
-
-.my-skills {
-  padding: 0 300px;
-}
-
-.extra ul {
-  padding: 0 300px;
-  padding-bottom: 25px;
-  list-style: circle;
-}
-
-.extra h2 {
-  padding: 0 300px;
-}
-
-.resume {
-  background-color: #238479;
-  color: #FFFFFF;
-  letter-spacing: 0.03rem;
-  border-radius: 25px;
-  width: 160px;
-  height: 40px;
-  padding: 10px 25px;
-margin-left: 300px;
-}
-
-/*Responsive*/
-@media only screen and (min-width: 641px) {
-  .col-md-6 {
-    width: 50%;
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
   }
 
-  header {
-    padding: 20px 0 13px;
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
   }
 
   nav>ul>li {
@@ -258,40 +184,23 @@ margin-left: 300px;
     display: inline-block;
   }
 
-  .navtoggle, .navtoggle.responsive {
-    position: relative;
+  .navtoggle li:last-child {
+    display: none;
   }
-}
 
-@media only screen and (min-width: 1024px) {
-  .col-lg-6 {
+  .col-md-6 {
     width: 50%;
   }
+}
 
-  .col-lg-4 {
-    width: 33.33%;
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-@media only screen and (min-width: 1440px) {}
-
 @media only screen and (min-width: 1920px) {}
-
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-}
-
-.navtoggle.responsive li {
-  display: block;
-}

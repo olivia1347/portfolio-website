@@ -7,7 +7,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
   <link href="img/favicon.png" rel="shortcut icon">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,100 +16,121 @@
 <body>
 
   <header>
-    <div class="navToggle" id="myNavtoggle">
-      <nav>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
         <a href="index.html" class="name">Olivia Rudd</a>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <!-- hero section -->
-  <div class="row">
-    <section id="main">
-      <div class="intro">
-        <div class="intro-text">
-          <h1>Hi! I'm Olivia. <br>
-            I'm a <span>UX & UI designer.</span></h1>
-          <p>I want to share my love and enthusiasm for design with a team who is
-            as eager and excited as I am to create fun products and experiences.</p>
-          <a href="#work" class="work-button">View My Work</a>
+  <!-- Hero section-->
+  <main>
+    <div id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="column col-md-6 col-lg-5">
+            <div class="intro">
+              <h2>Hi! I'm Olivia Rudd. I'm a <span>UX & UI designer.</span></h2>
+              <span></span>
+              <p>I have a passion for bringing meaningful experiences to life with design.
+                I care for the small details and focus on creating with the user in mind.<br>
+                <span class="job">I'm currently looking for a full-time remote opportunity.</span>
+              </p>
+            </div>
+          </div>
+          <div class="column col-md-6 col-lg-7">
+            <img src="img/illustration.svg" class="illustration" alt="illustration">
+          </div>
         </div>
-        <div>
-          <img src="img/illustration.svg" class="illustration" alt="illustration">
-        </div>
-      </div>
-  </div>
-
-
-
-  <!-- beginning of work section -->
-  <section class="my-work" id="work">
-    <h2 class="work-title">My Work</h2>
-    <div class="row">
-
-      <div class="col-lg-4">
-        <a href="https://www.behance.net/gallery/112214103/Goodie-Bag-A-Grocery-Ordering-App" target="_blank" class="portfolio-item">
-          <picture>
-            <source srcset="img/goodiebag/goodiebag@1x.png" media="(max-width:767px)">
-            <img src="img/goodiebag/goodiebag@2x.png" alt="Goodie Bag" class="portfolio-img">
-          </picture>
-        </a>
-      </div>
-
-      <div class="col-lg-4">
-        <a href="https://www.behance.net/gallery/112277277/Stash-A-Money-Management-App" target="_blank" class="portfolio-item">
-          <picture>
-            <source srcset="img/stash/stash@1x.png" media="(max-width:767px)">
-            <img src="img/stash/stash@2x.png" alt="Stash" class="portfolio-img">
-          </picture>
-        </a>
-      </div>
-
-      <div class="col-lg-4">
-        <a href="https://www.behance.net/gallery/112284937/Salez-A-Place-To-Buy-And-Sell-Homemade-Goods" target="_blank" class="portfolio-item">
-          <picture>
-            <source srcset="img/salez/salez@1x.png" media="(max-width:767px)">
-            <img src="img/salez/salez@2x.png" alt="Salez" class="portfolio-img">
-          </picture>
-        </a>
       </div>
     </div>
-  </section>
 
-  <!-- footer -->
 
+    <!-- Work section-->
+
+    <div id="work">
+      <div class="container">
+        <h3>My Work</h3>
+
+        <div class="row">
+          <div class="column col-md-6 col-lg-7">
+            <picture>
+              <source srcset="img/goodiebag/goodiebag@1x.png" media="(max-width:767px)">
+              <img src="img/goodiebag/goodiebag@2x.png" alt="Goodie Bag" class="portfolio-img">
+            </picture>
+          </div>
+
+          <div class="column col-md-6 col-lg-5">
+            <h4>Goodie Bag</h4>
+            <p>Goodie Bag is a grocery ordering app</p>
+            <a href="https://www.behance.net/gallery/112214103/Goodie-Bag-A-Grocery-Ordering-App" class="button" target="_blank">View</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column col-md-6 col-lg-7">
+            <picture>
+              <source srcset="img/stash/stash@1x.png" media="(max-width:767px)">
+              <img src="img/stash/stash@2x.png" alt="Stash" class="portfolio-img">
+            </picture>
+          </div>
+
+          <div class="column col-md-6 col-lg-5">
+            <h4>Stash</h4>
+            <p>Stash is a money management app</p>
+            <a href="https://www.behance.net/gallery/112277277/Stash-A-Money-Management-App" class="button" target="_blank">View</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column col-md-6 col-lg-7">
+            <picture>
+              <source srcset="img/salez/salez@1x.png" media="(max-width:767px)">
+              <img src="img/salez/salez@2x.png" alt="Goodie Bag" class="portfolio-img">
+            </picture>
+          </div>
+
+          <div class="column col-md-6 col-lg-5">
+            <h4>Salez</h4>
+            <p>Salez is an online marketplace to buy and sell handmade goods</p>
+            <a href="https://www.behance.net/gallery/112284937/Salez-A-Place-To-Buy-And-Sell-Homemade-Goods" class="button" target="_blank">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
 
   <footer id="contact">
-    <div class="contact-text">
-      <h2>Contact me</h2>
+    <div class="container">
+
+      <h3>Contact Me</h3>
       <p>I'd love to work with you!</p>
-      <a href="mailto:olivialr1347@gmail.com" class="email-button">Email Me</a>
-    </div>
-    <p>You can also find me on Linkedin</p>
-    <div class="social-img">
-      <!-- linkedin -->
-      <a href="https://www.linkedin.com/in/olivia-rudd-6061a51b0/">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);">
-          <path
-            d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h16c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z M8.339,18.337H5.667 v-8.59h2.672V18.337z M7.003,8.574c-0.856,0-1.548-0.694-1.548-1.548s0.691-1.548,1.548-1.548c0.854,0,1.548,0.693,1.548,1.548 S7.857,8.574,7.003,8.574z M18.338,18.337h-2.669V14.16c0-0.996-0.018-2.277-1.388-2.277c-1.39,0-1.601,1.086-1.601,2.207v4.248 h-2.667v-8.59h2.56v1.174h0.037c0.355-0.675,1.227-1.387,2.524-1.387c2.704,0,3.203,1.778,3.203,4.092V18.337z">
-          </path>
-        </svg>
-      </a>
+      <a href="mailto:olivialr1347@gmail.com" class="button">Email Me</a>
+      <p>You can also find me on Linkedin</p>
       <div>
-        <p>Copyright Olivia Rudd 2020</p>
+        <a href="https://www.linkedin.com/in/olivia-rudd-6061a51b0/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);">
+            <path
+              d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h16c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z M8.339,18.337H5.667 v-8.59h2.672V18.337z M7.003,8.574c-0.856,0-1.548-0.694-1.548-1.548s0.691-1.548,1.548-1.548c0.854,0,1.548,0.693,1.548,1.548 S7.857,8.574,7.003,8.574z M18.338,18.337h-2.669V14.16c0-0.996-0.018-2.277-1.388-2.277c-1.39,0-1.601,1.086-1.601,2.207v4.248 h-2.667v-8.59h2.56v1.174h0.037c0.355-0.675,1.227-1.387,2.524-1.387c2.704,0,3.203,1.778,3.203,4.092V18.337z">
+            </path>
+          </svg>
+        </a>
+        <p>Copyright Olivia Rudd 2021</p>
       </div>
     </div>
   </footer>
 
   <script src="js/scripts.js"></script>
-
 </body>
 
 </html>
